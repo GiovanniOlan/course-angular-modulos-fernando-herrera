@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Data } from '../../interfaces/card-list.interfaces';
+import { CardListData } from '../../interfaces/card-list.interfaces';
 
 @Component({
   selector: 'gifs-card-list',
@@ -8,7 +8,7 @@ import { Data } from '../../interfaces/card-list.interfaces';
 })
 export class CardListComponent {
 
-  @Input({required: true}) data: Data[] = [];
+  @Input({required: true}) data: CardListData[] = [];
 
   constructor() { }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Gif } from '../../interfaces/gifs.interfaces';
 import { GifsService } from '../../services/gifs.service';
-import { Data } from '../../interfaces/card-list.interfaces';
+import { CardListData } from '../../interfaces/card-list.interfaces';
 
 @Component({
   selector: 'gifs-home-page',
@@ -13,10 +13,10 @@ export class HomePageComponent {
 
   constructor(private gifService: GifsService) { }
 
-  get giftResult(): Data[] {
+  get giftResult(): CardListData[] {
     return this.gifService.gifList.map(gif => ({
+      title: gif.title,
       imgUrl: gif.images.original.url,
-      slug: gif.slug
     }));
   }
 }

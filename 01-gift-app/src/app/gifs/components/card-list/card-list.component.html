@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-md-3 col-sm-6" *ngFor="let d of data">
     <div class="card mb-2 text-center bg-dark">
+      <img [src]="d.imgUrl" [alt]="d.title" class="card-img-top">
       <div class="card-body text-white">
         <p class="card-text">
-          <img [src]="d.imgUrl" alt="{{ d.slug }}" class="img-fluid">
-          {{ d.slug }}
+          {{ d.title }}
         </p>
       </div>
     </div>
