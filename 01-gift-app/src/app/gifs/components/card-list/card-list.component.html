@@ -1,10 +1,10 @@
 <div class="row">
-  <div class="col-md-3 col-sm-6" *ngFor="let gif of gifs_result">
+  <div class="col-md-3 col-sm-6" *ngFor="let d of data">
     <div class="card mb-2 text-center bg-dark">
       <div class="card-body text-white">
         <p class="card-text">
-          <img [src]="gif.images.fixed_height.url" alt="{{ gif.title }}" class="img-fluid">
-          {{ gif.slug }}
+          <img [src]="d.imgUrl" alt="{{ d.slug }}" class="img-fluid">
+          {{ d.slug }}
         </p>
       </div>
     </div>

@@ -9,16 +9,12 @@ export class GifsService {
   private URL_API: string = "https://api.giphy.com/v1/gifs";
 
   private _tagsHistory: string[] = [];
-  private gifList: Gif[] = [];
+  public gifList: Gif[] = [];
 
   constructor(private http: HttpClient) { }
 
   get tagsHistory(): string[] {
     return [...this._tagsHistory];
-  }
-
-  get gifs(): Gif[] {
-    return [...this.gifList];
   }
 
   public saveInHistory(tag: string) {
