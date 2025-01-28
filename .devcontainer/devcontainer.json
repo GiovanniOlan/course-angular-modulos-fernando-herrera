@@ -31,7 +31,8 @@
         "aaron-bond.better-comments",
         "bradlc.vscode-tailwindcss",
         "yoavbls.pretty-ts-errors",
-        "johnpapa.Angular2"
+        "johnpapa.Angular2",
+        "hossaini.bootstrap-intellisense"
       ]
     }
   }
