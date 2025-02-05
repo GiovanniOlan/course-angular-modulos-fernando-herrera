@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-docker-compose
 {
-  "name": "Diprasa System",
+  "name": "Course Angular Modulos - Fernando Herrera",
   // Update the 'dockerComposeFile' list if you have more compose files or use different names.
   // The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
   "dockerComposeFile": [
@@ -31,7 +31,8 @@
         "aaron-bond.better-comments",
         "bradlc.vscode-tailwindcss",
         "yoavbls.pretty-ts-errors",
-        "johnpapa.Angular2"
+        "johnpapa.Angular2",
+        "hossaini.bootstrap-intellisense"
       ]
     }
   }
