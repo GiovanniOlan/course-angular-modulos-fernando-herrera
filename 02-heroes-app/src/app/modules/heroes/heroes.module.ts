@@ -11,9 +11,12 @@ import { PageLayoutModule } from '../../layouts/page-layout/page-layout.module';
     ListPageComponent,
   ],
   imports: [
+    // Third modules
     CommonModule,
+    // Layouts
+    PageLayoutModule,
+    // My internal modules
     HeroesRoutingModule,
-    PageLayoutModule
   ]
 })
 export class HeroesModule { }
