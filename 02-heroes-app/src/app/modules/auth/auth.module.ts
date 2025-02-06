@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginPageComponent } from './page/login-page/login-page.component';
 import { AuthLayoutModule } from '../../layouts/auth-layout/auth-layout.module';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { AuthLayoutModule } from '../../layouts/auth-layout/auth-layout.module';
     AuthLayoutModule,
     // My internal modules
     AuthRoutingModule,
+    MaterialModule
   ]
 })
 export class AuthModule { }
