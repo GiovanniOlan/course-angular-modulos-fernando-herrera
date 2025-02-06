@@ -1,14 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'shared-list-page',
+  selector: 'heroes-list-page',
   standalone: false,
-  template: `<p>list-page works!</p>`,
-  styles: `
-    :host {
-      display: block;
-    }
-  `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<h1>Heros List Page</h1>`,
 })
 export class ListPageComponent { }

@@ -1,14 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-login-layout',
+  selector: 'app-page-layout',
   standalone: false,
-  template: `<p>login-layout works!</p>`,
+  templateUrl: './page-layout.component.html',
   styles: `
     :host {
       display: block;
     }
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LoginLayoutComponent { }
+export class PageLayoutComponent { }

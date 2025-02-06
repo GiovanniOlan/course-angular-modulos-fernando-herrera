@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-register-layout',
+  selector: 'app-auth-layout',
   standalone: false,
-  template: `<p>register-layout works!</p>`,
+  templateUrl: './auth-layout.component.html',
   styles: `
     :host {
       display: block;
@@ -11,4 +11,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RegisterLayoutComponent { }
+export class AuthLayoutComponent { }

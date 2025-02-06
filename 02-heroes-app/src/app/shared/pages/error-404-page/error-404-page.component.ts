@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'shared-error-404-page',
-  standalone: false,
+  selector: 'app-error-404-page',
+  imports: [],
   template: `<p>error-404-page works!</p>`,
   styles: `
     :host {
