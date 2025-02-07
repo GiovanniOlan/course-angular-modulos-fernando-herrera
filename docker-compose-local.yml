@@ -6,6 +6,7 @@ services:
     # command: node --version
     ports:
       - "4200:4200"
+      - "3000:3000"
     volumes:
       - .:/code
     restart: no
