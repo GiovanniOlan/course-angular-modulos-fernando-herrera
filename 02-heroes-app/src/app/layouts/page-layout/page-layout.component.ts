@@ -5,9 +5,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: false,
   templateUrl: './page-layout.component.html',
   styles: `
-    :host {
-      display: block;
-    }
+
   `,
 })
-export class PageLayoutComponent { }
+export class PageLayoutComponent {
+  public sidebarItems = [
+    {label: 'Listado', icon: 'label', url: '/heroes/list'},
+    {label: 'Añadir', icon: 'add', url: '/heroes/add'},
+    {label: 'Buscar', icon: 'Search', url: '/heroes/search'},
+  ]
+}
