@@ -8,6 +8,8 @@ import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/heroImage.pipe';
 import { HeroPageComponent } from './pages/hero-page/hero-page.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,6 +17,7 @@ import { HeroPageComponent } from './pages/hero-page/hero-page.component';
     // Pages
     ListPageComponent,
     HeroPageComponent,
+    SearchPageComponent,
     // Components
     CardComponent,
     // Pipes
@@ -24,6 +27,7 @@ import { HeroPageComponent } from './pages/hero-page/hero-page.component';
     // Third modules
     CommonModule,
     MaterialModule,
+    ReactiveFormsModule,
     // Layouts
     PageLayoutModule,
     // My internal modules
