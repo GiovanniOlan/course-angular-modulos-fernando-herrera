@@ -8,7 +8,7 @@ import { switchMap } from 'rxjs';
   selector: 'heroes-hero-page',
   standalone: false,
   templateUrl: './hero-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroPageComponent implements OnInit {
 
@@ -22,7 +22,12 @@ export class HeroPageComponent implements OnInit {
         switchMap(({ id }) => this.heroeService.getHerobyId(id))
       ).subscribe(hero => {
         if (!hero) return this.router.navigate(['/heroes/all']);
-        return this.hero = hero;
+        this.hero = hero;
+        return;
       })
+  }
+
+  goBack(): void {
+    this.router.navigate(['/heroes/all']);
   }
 }

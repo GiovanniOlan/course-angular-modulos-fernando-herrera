@@ -7,12 +7,17 @@ import { PageLayoutModule } from '../../layouts/page-layout/page-layout.module';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/heroImage.pipe';
+import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 
 
 @NgModule({
   declarations: [
+    // Pages
     ListPageComponent,
+    HeroPageComponent,
+    // Components
     CardComponent,
+    // Pipes
     HeroImagePipe
   ],
   imports: [
