@@ -6,12 +6,14 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { PageLayoutModule } from '../../layouts/page-layout/page-layout.module';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
+import { HeroImagePipe } from './pipes/heroImage.pipe';
 
 
 @NgModule({
   declarations: [
     ListPageComponent,
-    CardComponent
+    CardComponent,
+    HeroImagePipe
   ],
   imports: [
     // Third modules
