@@ -10,6 +10,7 @@ import { HeroImagePipe } from './pipes/heroImage.pipe';
 import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreatePageComponent } from './pages/create-page/create-page.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ListPageComponent,
     HeroPageComponent,
     SearchPageComponent,
+    CreatePageComponent,
     // Components
     CardComponent,
     // Pipes

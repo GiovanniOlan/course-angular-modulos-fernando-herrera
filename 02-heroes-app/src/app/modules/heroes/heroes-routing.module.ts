@@ -4,6 +4,7 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
 import { HeroPageComponent } from './pages/hero-page/hero-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { CreatePageComponent } from './pages/create-page/create-page.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,7 @@ const routes: Routes = [
     children: [
       { path: 'all', component: ListPageComponent },
       { path: 'search', component: SearchPageComponent },
+      { path: 'add', component: CreatePageComponent },
       { path: ':id', component: HeroPageComponent },
       { path: '**', redirectTo: 'all', pathMatch: 'full' }
     ]
