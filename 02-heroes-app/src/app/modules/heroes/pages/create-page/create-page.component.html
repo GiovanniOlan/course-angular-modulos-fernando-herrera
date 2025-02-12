@@ -1,6 +1,8 @@
 <h1>
   {{ pageTitle}} héroe
-  <small>Superman</small>
+  @if (currentHero){
+    <small>{{ currentHero.superhero }}</small>
+  }
 </h1>
 
 <mat-divider class="mb-2"></mat-divider>

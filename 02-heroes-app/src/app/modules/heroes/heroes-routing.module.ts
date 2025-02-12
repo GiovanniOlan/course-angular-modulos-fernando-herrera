@@ -14,6 +14,7 @@ const routes: Routes = [
       { path: 'all', component: ListPageComponent },
       { path: 'search', component: SearchPageComponent },
       { path: 'add', component: CreatePageComponent },
+      { path: 'edit/:id', component:  CreatePageComponent},
       { path: ':id', component: HeroPageComponent },
       { path: '**', redirectTo: 'all', pathMatch: 'full' }
     ]
