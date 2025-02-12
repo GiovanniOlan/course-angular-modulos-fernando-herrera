@@ -5,6 +5,7 @@ import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { HeroesService } from '../../services/heroes.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'heroes-create-page',
@@ -30,7 +31,12 @@ export class CreatePageComponent implements OnInit {
 
   public pageTitle = 'Crear';
 
-  constructor(private heroesService: HeroesService, private activateRouter: ActivatedRoute, private router: Router) { }
+  constructor(
+    private heroesService: HeroesService,
+    private activateRouter: ActivatedRoute,
+    private router: Router,
+    private snackbar: MatSnackBar
+  ) { }
 
   ngOnInit(): void {
     if (!this.router.url.includes('edit')) return;
@@ -61,7 +67,7 @@ export class CreatePageComponent implements OnInit {
     if (this.currentHero.id) {
       this.heroesService.updateHero(this.currentHero)
         .subscribe(hero => {
-
+          this.showSnackbar('Registro actualizado');
         });
 
       return;
@@ -69,10 +75,16 @@ export class CreatePageComponent implements OnInit {
 
     this.heroesService.addHero(this.currentHero)
       .subscribe(hero => {
+        this.router.navigate(['/heroes', hero.id]);
+        this.showSnackbar('Registro creado');
         // TODO: Mostrar snackbar
       });
+  }
 
-
+  showSnackbar(message: string): void {
+    this.snackbar.open(message, 'done', {
+      duration: 2500,
+    })
   }
 
 }
